@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+index/
+_to_delete/
+.DS_Store

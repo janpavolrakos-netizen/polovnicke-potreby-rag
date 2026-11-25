@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xml:base="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <owl:Ontology rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby">
+    <rdfs:label xml:lang="sk">Polovnicke potreby</rdfs:label>
+    <rdfs:comment xml:lang="sk">Ontologia polovnickych potrieb: typy potrieb, vyrobcovia, zname produkty a cenove kategorie.</rdfs:comment>
+  </owl:Ontology>
+  <owl:AllDisjointClasses rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b158">
+    <owl:members rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Lacne"/>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Stredna_Trieda"/>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Premiove"/>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Luxusne"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <Blaser_R8 rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Moja_Gulovnica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <Cena rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4500</Cena>
+    <Krajina_Povodu>Nemecko</Krajina_Povodu>
+  </Blaser_R8>
+  <owl:AllDisjointClasses rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b168">
+    <owl:members rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zbrane"/>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Optika"/>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Strelivo"/>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Oblecenie_A_Obuv"/>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Prislusenstvo"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b174">
+    <owl:members rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Gulovnica"/>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Brokovnica"/>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Kombinovana_Zbran"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b163">
+    <owl:members rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Puskohlad"/>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Dalekohlad"/>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Termovizia"/>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Dialkomer"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vabnicka">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Prislusenstvo"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Premiove">
+    <rdfs:comment xml:lang="sk">Cena 1000 - 2999 EUR.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b139">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zeiss"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b140">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Beretta"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b141">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Produkt"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Beretta_686"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b142">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pulsar"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b143">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Produkt"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pulsar_Helion_XP50"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b144">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Sako"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b145">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Produkt"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Sako_85"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b146">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Produkt"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zeiss_Victory_SF"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Exkluzivna_Trieda"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b147">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b148">
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena">
+                <rdfs:comment xml:lang="sk">Orientacna cena v EUR.</rdfs:comment>
+                <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+              </owl:DatatypeProperty>
+            </owl:onProperty>
+            <owl:someValuesFrom>
+              <rdfs:Datatype rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b149">
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b150">
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</xsd:minInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+          <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b152">
+            <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+            <owl:someValuesFrom>
+              <rdfs:Datatype rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b153">
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b154">
+                    <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</xsd:maxExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Vyrobcom">
+    <rdfs:comment xml:lang="sk">Vyrobca vyraba dany produkt (inverzna k Ma_Vyrobcu).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Ma_Vyrobcu">
+        <rdfs:comment xml:lang="sk">Produkt ma daneho vyrobcu.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Krajina_Povodu">
+    <rdfs:comment xml:lang="sk">Krajina, z ktorej produkt pochadza.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Gulovy_Naboj">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b137">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Produktu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#RWS_Evolution"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b138">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#RWS"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Strelivo"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Brokovy_Naboj"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Oblecenie_A_Obuv">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Typ_Potreby"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Blaser_R8">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b95">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Gulovnica"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Typu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b96">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pouziva_Strelivo"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Gulovy_Naboj"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b97">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Blaser"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Ma_Vyrobcu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b98">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Luxusne"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Spada_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b99">
+        <owl:hasValue>Nemecko</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Krajina_Povodu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b100">
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4500</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Morakniv">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b40">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Vyrobcom"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Morakniv_Companion"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b41">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyraba"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Polovnicky_Noz"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b42">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Lacne"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Patri_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Produkt">
+    <rdfs:comment xml:lang="sk">Cenova kategoria obsahuje produkt.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cenova_Kategoria"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Harkila">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b24">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyraba"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Bunda"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b25">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Vyrobcom"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Harkila_Pro_Hunter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b26">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Stredna_Trieda"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Patri_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pulsar_Helion_XP50">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b53">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Premiove"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Spada_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b54">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pulsar"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Ma_Vyrobcu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b55">
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2800</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b56">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Termovizia"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Typu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b57">
+        <owl:hasValue>Litva</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Krajina_Povodu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Sako_85">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b71">
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2200</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b72">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Gulovnica"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Typu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b73">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pouziva_Strelivo"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Gulovy_Naboj"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b74">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Premiove"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Spada_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b75">
+        <owl:hasValue>Finsko</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Krajina_Povodu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b76">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Sako"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Ma_Vyrobcu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyraba">
+    <rdfs:comment xml:lang="sk">Vyrobca vyraba dany typ potrieb.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Typ_Potreby"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Termovizia">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b85">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pulsar"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b86">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Produktu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pulsar_Helion_XP50"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Optika"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Beretta_686">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b10">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pouziva_Strelivo"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Brokovy_Naboj"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b11">
+        <owl:hasValue>Taliansko</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Krajina_Povodu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b12">
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2400</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b13">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Premiove"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Spada_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b14">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Beretta"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Ma_Vyrobcu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b15">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Brokovnica"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Typu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Meindl">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b32">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyraba"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obuv"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b33">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Vyrobcom"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Meindl_Island_MFS"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b34">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Stredna_Trieda"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Patri_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Morakniv_Companion">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b43">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Morakniv"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Ma_Vyrobcu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b44">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Polovnicky_Noz"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Typu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b45">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Lacne"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Spada_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b46">
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b47">
+        <owl:hasValue>Svedsko</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Krajina_Povodu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Harkila_Pro_Hunter">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b27">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Stredna_Trieda"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Spada_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b28">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Bunda"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Typu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b29">
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b30">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Harkila"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Ma_Vyrobcu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b31">
+        <owl:hasValue>Dansko</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Krajina_Povodu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Beretta">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b7">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Premiove"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Patri_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b8">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyraba"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Brokovnica"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b9">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Vyrobcom"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Beretta_686"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Lacne">
+    <rdfs:comment xml:lang="sk">Cena do 200 EUR.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b106">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Morakniv"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b107">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Produkt"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#RWS_Evolution"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b108">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#RWS"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b109">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Produkt"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Morakniv_Companion"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Bezna_Trieda"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b110">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+        <owl:someValuesFrom>
+          <rdfs:Datatype rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b111">
+            <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            <owl:withRestrictions rdf:parseType="Collection">
+              <rdf:Description rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b112">
+                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</xsd:maxExclusive>
+              </rdf:Description>
+            </owl:withRestrictions>
+          </rdfs:Datatype>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Vyrobcu">
+    <rdfs:comment xml:lang="sk">Priklad vyrobcu daneho typu potreby.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Typ_Potreby"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Brokovnica">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b19">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Produktu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Beretta_686"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b20">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Beretta"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b21">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Brokovy_Naboj"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pouziva_Strelivo"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zbrane"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Vyrobcu">
+    <rdfs:comment xml:lang="sk">Cenova kategoria obsahuje vyrobcu.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cenova_Kategoria"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Bezna_Trieda">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cenova_Kategoria"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Exkluzivna_Trieda"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#RWS_Evolution">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b63">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Gulovy_Naboj"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Typu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b64">
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b65">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Lacne"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Spada_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b66">
+        <owl:hasValue>Nemecko</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Krajina_Povodu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b67">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#RWS"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Ma_Vyrobcu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Kombinovana_Zbran">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b1">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pouziva_Strelivo"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Brokovy_Naboj"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b2">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pouziva_Strelivo"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Gulovy_Naboj"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zbrane"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Sako">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b68">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyraba"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Gulovnica"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b69">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Vyrobcom"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Sako_85"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b70">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Premiove"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Patri_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Puskohlad">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b58">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Swarovski"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b59">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Produktu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Swarovski_Z8i"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Optika"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Blaser">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b16">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyraba"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Gulovnica"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b17">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Luxusne"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Patri_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b18">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Vyrobcom"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Blaser_R8"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Strelivo">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Typ_Potreby"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Bunda">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b3">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Produktu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Harkila_Pro_Hunter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b4">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Harkila"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Oblecenie_A_Obuv"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obuv"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Patri_Do_Kategorie">
+    <rdfs:comment xml:lang="sk">Vyrobca patri do cenovej kategorie.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cenova_Kategoria"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Gulovnica">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b101">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Produktu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Sako_85"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b102">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Sako"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b103">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Blaser"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b104">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Produktu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Blaser_R8"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b105">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Gulovy_Naboj"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pouziva_Strelivo"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zbrane"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Brokovy_Naboj">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Strelivo"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Meindl_Island_MFS">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b35">
+        <owl:hasValue>Nemecko</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Krajina_Povodu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b36">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Meindl"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Ma_Vyrobcu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b37">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obuv"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Typu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b38">
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">330</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b39">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Stredna_Trieda"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Spada_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Swarovski_Z8i">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b80">
+        <owl:hasValue>Rakusko</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Krajina_Povodu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b81">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Swarovski"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Ma_Vyrobcu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b82">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Puskohlad"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Typu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b83">
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3200</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b84">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Luxusne"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Spada_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Produktu">
+    <rdfs:comment xml:lang="sk">Priklad produktu daneho typu potreby.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Typ_Potreby"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Luxusne">
+    <rdfs:comment xml:lang="sk">Cena od 3000 EUR.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b114">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Produkt"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Swarovski_Z8i"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b115">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Swarovski"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b116">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Produkt"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Blaser_R8"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b117">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Blaser"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Exkluzivna_Trieda"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b118">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+        <owl:someValuesFrom>
+          <rdfs:Datatype rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b119">
+            <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            <owl:withRestrictions rdf:parseType="Collection">
+              <rdf:Description rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b120">
+                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</xsd:minInclusive>
+              </rdf:Description>
+            </owl:withRestrictions>
+          </rdfs:Datatype>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Swarovski">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b77">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Luxusne"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Patri_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b78">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyraba"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Puskohlad"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b79">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Vyrobcom"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Swarovski_Z8i"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zeiss_Victory_SF">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b90">
+        <owl:hasValue>Nemecko</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Krajina_Povodu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b91">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Premiove"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Spada_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b92">
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2900</owl:hasValue>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b93">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Dalekohlad"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Typu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b94">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zeiss"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Ma_Vyrobcu"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zeiss">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b87">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Vyrobcom"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zeiss_Victory_SF"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b88">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Premiove"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Patri_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b89">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyraba"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Dalekohlad"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Stredna_Trieda">
+    <rdfs:comment xml:lang="sk">Cena 200 - 999 EUR.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b122">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Harkila"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b123">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Produkt"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Meindl_Island_MFS"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b124">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Meindl"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b125">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obsahuje_Produkt"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Harkila_Pro_Hunter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Bezna_Trieda"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b126">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b127">
+            <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+            <owl:someValuesFrom>
+              <rdfs:Datatype rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b128">
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b129">
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</xsd:minInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+          <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b131">
+            <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cena"/>
+            <owl:someValuesFrom>
+              <rdfs:Datatype rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b132">
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b133">
+                    <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</xsd:maxExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Optika">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Typ_Potreby"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Polovnicky_Noz">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b5">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Morakniv"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b6">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Produktu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Morakniv_Companion"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Prislusenstvo"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vabnicka"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Obuv">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b48">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Meindl"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b49">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Produktu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Meindl_Island_MFS"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Oblecenie_A_Obuv"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Spada_Do_Kategorie">
+    <rdfs:comment xml:lang="sk">Produkt spada do cenovej kategorie.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cenova_Kategoria"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Exkluzivna_Trieda">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cenova_Kategoria"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Typu">
+    <rdfs:comment xml:lang="sk">Produkt je urciteho typu polovnickej potreby.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Typ_Potreby"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Dialkomer">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Optika"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#RWS">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b60">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyraba"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Gulovy_Naboj"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b61">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Lacne"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Patri_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b62">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Vyrobcom"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#RWS_Evolution"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Typ_Potreby">
+    <rdfs:comment xml:lang="sk">Druhy polovnickych potrieb.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca">
+    <rdfs:comment xml:lang="sk">Vyrobcovia polovnickych potrieb.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pulsar">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b50">
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Premiove"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Patri_Do_Kategorie"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b51">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyraba"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Termovizia"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b52">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Je_Vyrobcom"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pulsar_Helion_XP50"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Vyrobca"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Prislusenstvo">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Typ_Potreby"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Pouziva_Strelivo">
+    <rdfs:comment xml:lang="sk">Zbran pouziva dany typ streliva.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Strelivo"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Dalekohlad">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b22">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Produktu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zeiss_Victory_SF"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nfed2b2a2ba3e4a5e971104c92b71b0a6b23">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Priklad_Vyrobcu"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zeiss"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Optika"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Cenova_Kategoria">
+    <rdfs:comment xml:lang="sk">Cenove kategorie produktov podla ceny v EUR.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zname_Produkty">
+    <rdfs:comment xml:lang="sk">Konkretne zname produkty.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Zbrane">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janpavol/ontologies/2026/10/polovnicke-potreby#Typ_Potreby"/>
+  </owl:Class>
+</rdf:RDF>

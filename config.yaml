@@ -1,0 +1,14 @@
+# Konfigurácia RAG aplikácie "Poľovnícke potreby"
+llm_model: llama3.2            # ollama pull llama3.2
+embed_model: bge-m3            # ollama pull bge-m3 (viacjazyčný – SK aj EN)
+ollama_host: http://localhost:11434
+
+pdf_dir: data/pdf
+ontology_file: data/ontology/polovnicke-potreby.owl
+index_dir: index
+
+chunk_size: 1000               # znakov na jeden úsek (chunk)
+chunk_overlap: 150
+top_k: 5                       # koľko úsekov sa pošle modelu
+keep_languages: [sk, en]       # ostatné jazyky z viacjazyčných manuálov sa vynechajú
+temperature: 0.2
